@@ -1,0 +1,5 @@
+/* My name is Konstantin Rebrov.
+   My major is Computer Science.
+   I am in this class because it is required for my major.
+   I think I will learn how to use C++.
+   I like computer programming. */
