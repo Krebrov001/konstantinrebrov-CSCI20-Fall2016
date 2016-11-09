@@ -10,5 +10,6 @@ int main() {
 	};
 
 cout << "Number of entries in the array: ";
-cout << ((sizeof(personInfo)/sizeof(*personInfo)) * (sizeof(personInfo[0])/sizeof(*personInfo[0])));
+cout << sizeof(personInfo)/sizeof(*personInfo) << endl;
+cout << sizeof(personInfo[0])/sizeof(*personInfo[0]) << endl;
 }
