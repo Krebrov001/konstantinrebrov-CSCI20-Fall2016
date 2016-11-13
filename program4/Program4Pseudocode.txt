@@ -1,0 +1,68 @@
+create a new input file stream variable
+create a new input file stream variable
+create a new string stream variable
+
+ask the user to input a text file name
+ask the user to input a stop file name and save to new string variable
+
+open the text file with the input file stream
+
+if opening file is not successful
+    display error message
+    return 1
+
+create a string variable storage // to store unique words
+create a string variable temp1
+create a string variable temp2
+create a string variable temp3
+
+extract one word from input file stream to temp1
+append temp1 to storage
+append ' ' to storage
+
+while end of text file is not reached
+    extract one word from input file stream to temp1
+    
+    open the storage string with the string stream
+    
+    while end of storage string is not reached
+        extract one word from the string stream to temp2
+        
+        open the stop file with the file stream
+        while end of stop file is not reached
+            extract one word from the input fiel stream to temp3
+            
+                // to determine if a word is unique
+                if temp1 is not equal to temp2 or temp3
+                    append temp1 to storage
+                    append ' ' to storage
+
+// by now only unique words are stored into the storage string
+
+create a new int variable numUniqueWords
+
+for int x = 0; x < length of storage string; x++
+    if storage string.at(x) is equal to ' '
+        increment numUniqueWords
+
+create an int array counter with size of numUniqueWords
+
+creare a string array words with size of numUnique words
+
+for int x = 0; x < numUniqueWords; x++
+    open the storage string with the string stream
+    
+    extract a word from the string stream and save it to words[x]
+
+
+for int x = 0; x < length of numUniqueWords; x++
+    go to the start of the text file with the first (outer) input file stream
+    
+    while end of text file is not reached
+        if words[x] is equal to the extractred word from the input file stream
+        increment counter[x]
+
+for int x = 0; x < numUniqueWords x++
+    print words[x] ": " counter[x]
+
+end the program
